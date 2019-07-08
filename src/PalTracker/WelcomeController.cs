@@ -6,6 +6,6 @@ namespace PalTracker
     public class WelcomeController : ControllerBase
     {
         [HttpGet]
-        public string SayHello() => "hello Laxman/Krishna";
+        public string SayHello() => "hello";
     }
 }
