@@ -5,4 +5,4 @@ applications:
   routes:
   - route: krishna-pal-tracker-review.cfapps.io
   env:
-    WELCOME_MESSAGE: Hello from Cloud Foundry -Krishna Review
+    WELCOME_MESSAGE: Hello from the review environment
