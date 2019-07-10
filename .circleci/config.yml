@@ -63,7 +63,7 @@ jobs:
 
             cf login -a $CF_API -u "$CF_USERNAME" -p "$CF_PASSWORD" -o "$CF_ORG" -s "$CF_SPACE_REVIEW"
             cf push -f manifest-$ENVIRONMENT.yml
-            bash ./migrate-databases.sh pal-tracker . /root/project
+            bash ./migrate-databases.sh pal-trackerreview . /root/project
 
   deployToProd:
     docker:
@@ -107,7 +107,7 @@ jobs:
 
             cf login -a $CF_API -u "$CF_USERNAME" -p "$CF_PASSWORD" -o "$CF_ORG" -s "$CF_SPACE_PROD"
             cf push -f manifest-$ENVIRONMENT.yml
-            bash ./migrate-databases.sh pal-tracker . /root/project      
+            bash ./migrate-databases.sh pal-trackerprod . /root/project      
 
 workflows:
   version: 2
