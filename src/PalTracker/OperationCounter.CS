@@ -11,7 +11,7 @@ namespace PalTracker
         public OperationCounter()
         {
             _count = new Dictionary<TrackedOperation, int>();
-
+//rename .CS to cs
             foreach (var action in Enum.GetValues(typeof(TrackedOperation)))
             {
                 _count.Add((TrackedOperation) action, 0);
