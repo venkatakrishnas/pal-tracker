@@ -3,6 +3,6 @@ applications:
 - name: pal-trackerprod
   path: src/PalTracker/bin/Release/netcoreapp2.2/publish/
   routes:
-  - route: krishna-farheen-pal-tracker-prod.cfapps.io
+  - route: krishna-farheen2-pal-tracker-prod.cfapps.io
   env:
     WELCOME_MESSAGE: Hello from the production environment
