@@ -44,7 +44,7 @@ namespace PalTracker
                Configuration.GetValue<string>("CF_INSTANCE_ADDR", "cf instance addr unknown")
            ));
          
-            services.AddScoped<IHealthContributor, TimeEntryHealthContributor>();
+           services.AddScoped<IHealthContributor, TimeEntryHealthContributor>();
            services.AddScoped<ITimeEntryRepository, MySqlTimeEntryRepository>();
 
            services.AddSingleton<IOperationCounter<TimeEntry>, OperationCounter<TimeEntry>>();
