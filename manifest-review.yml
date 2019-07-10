@@ -3,6 +3,6 @@ applications:
 - name: pal-trackerreview
   path: src/PalTracker/bin/Release/netcoreapp2.2/publish/
   routes:
-  - route: krishna-pal-tracker-review.cfapps.io
+  - route: krishna-farheen-pal-tracker-review.cfapps.io
   env:
     WELCOME_MESSAGE: Hello from the review environment
